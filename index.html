@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RavenX</title>
+  </head>
+  <style>
+    #mobile-image {
+      display: none;
+    }
+    @media only screen and (max-width: 768px) {
+      #web-image {
+        display: none;
+      }
+      #mobile-image {
+        display: block;
+      }
+    }
+  </style>
+  <body style="margin: 0">
+    <img id="web-image" src="./RavenX.png" style="height: 99vh; width: 99vw" />
+    <img
+      id="mobile-image"
+      src="./Mobile.png"
+      style="height: 99vh; width: 99vw"
+    />
+  </body>
+</html>
