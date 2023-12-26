@@ -9,8 +9,25 @@
     #mobile-image {
       display: none;
     }
-    @media only screen and (max-width: 768px) {
+    #middle-image {
+      display: none;
+    }
+    @media only screen and (max-width: 1024px) {
       #web-image {
+        display: none;
+      }
+      #middle-image {
+        display: block;
+      }
+      #mobile-image {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 550px) {
+      #web-image {
+        display: none;
+      }
+      #middle-image {
         display: none;
       }
       #mobile-image {
@@ -18,8 +35,17 @@
       }
     }
   </style>
-  <body style="margin: 0; overflow: hidden;">
-    <img id="web-image" src="./RavenX.png" style="height: 100vh; width: 100vw" />
+  <body style="margin: 0; overflow: hidden">
+    <img
+      id="web-image"
+      src="./RavenX.png"
+      style="height: 100vh; width: 100vw"
+    />
+    <img
+      id="middle-image"
+      src="./RavenX1.png"
+      style="height: 100vh; width: 100vw"
+    />
     <img
       id="mobile-image"
       src="./Mobile.png"
